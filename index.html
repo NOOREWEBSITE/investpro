@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InvestPro — Investment & Business Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand"><span class="logo">IP</span><div><b>InvestPro</b><small>Business Portal</small></div></div>
+    <nav>
+      <button class="nav active" data-page="dashboard">📊 Dashboard</button>
+      <button class="nav" data-page="plans">💰 Investment Plans</button>
+      <button class="nav" data-page="businesses">🏢 Businesses</button>
+      <button class="nav" data-page="investments">📈 My Investments</button>
+      <button class="nav" data-page="transactions">💳 Transactions</button>
+      <button class="nav" data-page="support">🎫 Support</button>
+      <button class="nav" data-page="profile">👤 Profile</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="nav" data-page="admin">🔐 Admin Panel</button>
+      <button id="logout" class="logout">↪ Logout</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button id="menu" class="menu">☰</button>
+      <div class="search"><input id="globalSearch" placeholder="Search businesses, plans..."> 🔎</div>
+      <div class="top-actions"><button class="icon-btn">🔔<i></i></button><div class="avatar">MA</div><div><b id="userName">Moin Ahmad</b><small>Investor</small></div></div>
+    </header>
+    <div id="content"></div>
+  </main>
+</div>
+<div id="modal" class="modal"><div class="modal-card"><button class="close" onclick="closeModal()">×</button><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+</body>
+</html>
